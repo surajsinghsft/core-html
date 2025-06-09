@@ -2,55 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Full Stack Web Development Tech Stack</title>
+  <title>Sign Up and Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 350px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    input[type="checkbox"] {
+      width: auto;
+      display: inline-block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Full Stack Web Development Tech Stack</h1>
+  <h2>Sign-Up Form</h2>
+  <form>
+    <label>First Name:
+      <input type="text" name="firstName" required>
+    </label>
 
-  <dl>
-    <dt>HTML</dt>
-    <dd>Structures web pages.</dd>
+    <label>Last Name:
+      <input type="text" name="lastName" required>
+    </label>
 
-    <dt>CSS</dt>
-    <dd>Styles the layout of web pages.</dd>
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
 
-    <dt>JavaScript</dt>
-    <dd>Adds interactivity to websites.</dd>
+    <label>Password:
+      <input type="password" name="password" minlength="6" required>
+    </label>
 
-    <dt>Node.js</dt>
-    <dd>Executes JavaScript on the server-side.</dd>
+    <label>Confirm Password:
+      <input type="password" name="confirmPassword" minlength="6" required>
+    </label>
 
-    <dt>Express.js</dt>
-    <dd>Framework for handling server-side routing.</dd>
+    <label>Age:
+      <input type="number" name="age" min="1" required>
+    </label>
 
-    <dt>MongoDB</dt>
-    <dd>NoSQL database for flexible data storage.</dd>
-
-    <dt>React</dt>
-    <dd>Library for building interactive UIs.</dd>
-
-    <dt>Angular</dt>
-    <dd>Framework for scalable single-page apps.</dd>
-
-    <dt>Vue.js</dt>
-    <dd>Progressive framework for building UIs.</dd>
-
-    <dt>MySQL</dt>
-    <dd>Relational database for structured data.</dd>
-
-    <dt>Ruby on Rails</dt>
-    <dd>Framework for building database-driven apps.</dd>
-
-    <dt>Git</dt>
-    <dd>Version control system for tracking code changes.</dd>
-
-    <dt>Docker</dt>
-    <dd>Platform for containerizing applications.</dd>
-
-    <dt>Webpack</dt>
-    <dd>Bundles assets for web applications.</dd>
-  </dl>
-
-</body>
-</html>
+    <label>Gender:
+      <select name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option
